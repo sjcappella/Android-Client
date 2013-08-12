@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/nameOfTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/questionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/testQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This will be the questions...A question could be something like: What is WireShark?"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                 />
+            
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                 />
+            
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+               
+                android:text="Next" />
+
+            
+
+        </RelativeLayout>
+       
+    </TableLayout>

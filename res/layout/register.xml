@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+			android:layout_alignParentTop="true"
+            android:text="Register"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="35dp"
+            android:text="Enter First and Last Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/registerInput1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView1"
+            android:hint="Name"
+            android:inputType="textEmailAddress"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/registerInput1"
+            android:layout_marginTop="30dp"
+            android:text="Enter ESU User Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/registerInput2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:hint="abc1234"
+            android:layout_below="@+id/textView2"
+            android:inputType="textEmailAddress" />
+        
+        
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/registerInput2"
+            android:text="Enter Password"
+            android:layout_marginTop="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+            
+        <EditText
+            android:id="@+id/registerInput3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView3"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+         <Button
+             android:id="@+id/backButton"
+             android:layout_width="150dp"
+             android:layout_height="55dp"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentLeft="true"
+             android:text="Back"
+             android:onClick="goToRegisterLogin" />
+
+         <Button
+             android:id="@+id/button1"
+             android:layout_width="150dp"
+             android:layout_height="55dp"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:onClick="registerWithServer"
+             android:text="Register" />
+
+    </RelativeLayout>
+   
+    
+       

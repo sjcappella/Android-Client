@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Welcome, userName"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/selectTestText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/welcome"
+            android:layout_marginTop="20dp"
+            android:text="Select a test to take:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/testPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/selectTestText"
+            android:hint="Available Tests" />
+
+        <Button
+            android:id="@+id/logOutButton"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:onClick="goToRegisterLogin"
+            android:text="Log-Out" />
+
+        <Button
+            android:id="@+id/takeTestButton"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/testPicker"
+            android:layout_toRightOf="@+id/welcome"
+            android:text="Take Test"
+            android:onClick="getSelectedTest" />
+
+        <Button
+            android:id="@+id/viewStatsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/testPicker"
+            android:text="View Test Stats"
+            android:onClick="getTestStats" />
+
+    </RelativeLayout>

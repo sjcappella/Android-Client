@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, AndroidClientTestActivity!</string>
+    <string name="app_name">AndroidClientTest</string>
+    <string name="greeting">Please enter the IP Address of the server.</string>
+</resources>
